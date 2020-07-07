@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="democonsummer" />
+        <module name="eurekaServer" />
+        <module name="userSang" />
+        <module name="zuuldemo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloudsang" target="1.8" />
+      <module name="democonsummer" target="1.8" />
+      <module name="EurekaServer" target="1.8" />
+      <module name="eurekaServer" target="1.8" />
+      <module name="userConsumer" target="1.8" />
+      <module name="userSang" target="1.8" />
+      <module name="userservice" target="1.8" />
+      <module name="zuuldemo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

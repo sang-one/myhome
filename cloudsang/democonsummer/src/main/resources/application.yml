@@ -1,0 +1,33 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: ""
+  application:
+    name: consumer
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    eureka-server-read-timeout-seconds: 5
+ribbon:
+      ConnectTimeout: 250 #单位ms,请求连接超时时间
+      ReadTimeout: 1000 #单位ms,请求处理的超时时间
+      OkToRetryOnAllOperations: true #对所有操作请求都进行重试
+      MaxAutoRetriesNextServer: 2 #切换实例的重试次数
+      MaxAutoRetries: 1 #对当前实例的重试次数
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000 # Hsytrix的超时时间，默认1500毫秒

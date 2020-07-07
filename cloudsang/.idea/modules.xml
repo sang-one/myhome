@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloudsang.iml" filepath="$PROJECT_DIR$/cloudsang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/democonsummer/democonsummer.iml" filepath="$PROJECT_DIR$/democonsummer/democonsummer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurekaServer/eurekaServer.iml" filepath="$PROJECT_DIR$/eurekaServer/eurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userSang/userSang.iml" filepath="$PROJECT_DIR$/userSang/userSang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuuldemo/zuuldemo.iml" filepath="$PROJECT_DIR$/zuuldemo/zuuldemo.iml" />
+    </modules>
+  </component>
+</project>

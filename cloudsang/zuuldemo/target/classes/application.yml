@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: zull-demo
+eureka:
+  client:
+    eureka-server-read-timeout-seconds: 5
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    ip-address: http://127.0.0.1
+    prefer-ip-address: true
+zuul:
+  routes:
+    user: /user/**

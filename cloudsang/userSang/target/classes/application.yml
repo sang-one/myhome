@@ -1,0 +1,30 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: ""
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: user
+mybatis:
+  type-aliases-package: user.sangDao
+  mapperLocations: classpath:Mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+mapper:
+    mappers:
+        - tk.mybatis.springboot.util.MyMapper
+    not-empty: false
+    identity: MYSQL
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 3
+    lease-expiration-duration-in-seconds: 10
+    instance-id: ${spring.application.name}:${server.port}
